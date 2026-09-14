@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HabitFlow — a quiet habit tracker for iPhone</title>
+<meta name="description" content="HabitFlow is a simple daily habit tracker for iPhone. Everything stays on your device: no account, no server, no analytics.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --accent: #5F7A5D;
+    --accent-soft: rgba(95, 122, 93, 0.12);
+    --bg: #F6F6F2;
+    --card: #FFFFFF;
+    --text: #1E221F;
+    --muted: #5D645F;
+    --border: #E3E4DE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #8FAE8C;
+      --accent-soft: rgba(143, 174, 140, 0.14);
+      --bg: #131614;
+      --card: #1B1E1C;
+      --text: #E9EBE8;
+      --muted: #A2A9A4;
+      --border: #2A2E2B;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 56px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  a:hover { border-bottom-color: var(--accent); }
+  header.mast { margin-bottom: 28px; }
+  .mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 52px; height: 52px; border-radius: 14px;
+    background: var(--accent); color: #fff;
+    font-size: 26px; font-weight: 700; letter-spacing: -0.5px;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.4px; }
+  h2 { font-size: 21px; line-height: 1.3; margin: 34px 0 10px; letter-spacing: -0.2px; }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p { margin: 0 0 14px; }
+  .lede { font-size: 19px; color: var(--muted); margin-bottom: 22px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  .features { list-style: none; padding: 0; }
+  .features li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    margin: 0;
+  }
+  .features li:last-child { border-bottom: 0; }
+  .features strong { display: block; }
+  .features span { color: var(--muted); font-size: 15px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 0; }
+  .btn {
+    display: inline-block;
+    padding: 11px 18px;
+    border-radius: 11px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .lang-switch { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
+  .note { color: var(--muted); font-size: 15px; }
+  hr.sep { border: 0; border-top: 1px solid var(--border); margin: 46px 0 34px; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--accent-soft);
+    padding: 1px 5px;
+    border-radius: 5px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    h1 { font-size: 26px; }
+    .wrap { padding: 24px 16px 44px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="mark" aria-hidden="true">H</div>
+  <h1>HabitFlow</h1>
+  <p class="lede">A quiet daily habit tracker for iPhone. Pick a few habits, check them off, watch the streaks grow — everything stays on your device.</p>
+</header>
+
+<p class="lang-switch"><strong>English</strong> · <a href="#ru">Русская версия</a></p>
+
+<section id="en" lang="en">
+
+  <div class="card">
+    <p><strong>No account. No server. No analytics. No ads.</strong></p>
+    <p class="note">HabitFlow collects no data at all. Your habits and history live in a local database on your iPhone and are never sent anywhere.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <ul class="features">
+    <li><strong>Daily check-offs</strong><span>One tap marks a habit done for today. Tap again to undo.</span></li>
+    <li><strong>Flexible schedules</strong><span>Choose which weekdays each habit repeats on.</span></li>
+    <li><strong>Streaks and history</strong><span>Current streak, best streak, a 30-day completion rate and a heatmap of the last months.</span></li>
+    <li><strong>Progress overview</strong><span>Totals for the week, a 14-day chart and a per-habit breakdown.</span></li>
+    <li><strong>Local reminders</strong><span>An optional daily reminder per habit, scheduled by iOS on your device.</span></li>
+    <li><strong>Home Screen widget</strong><span>Small and medium widgets showing what is left for today.</span></li>
+    <li><strong>Icons and colors</strong><span>Twenty icons and eight calm colors to tell habits apart.</span></li>
+    <li><strong>Light and dark</strong><span>Follows your system appearance, supports Dynamic Type.</span></li>
+  </ul>
+
+  <h2>Requirements</h2>
+  <p>iPhone with iOS 18 or later.</p>
+
+  <div class="links">
+    <a class="btn primary" href="privacy.html">Privacy Policy</a>
+    <a class="btn" href="support.html">Support</a>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs or ideas: <code>snmqdubjl669@outlook.com</code></p>
+
+</section>
+
+<hr class="sep">
+
+<section id="ru" lang="ru">
+  <h2>Русская версия</h2>
+  <p class="lang-switch"><a href="#en">English</a> · <strong>Русский</strong></p>
+
+  <p class="lede">HabitFlow — спокойный трекер ежедневных привычек для iPhone. Выберите несколько привычек, отмечайте их и следите за сериями — всё остаётся на вашем устройстве.</p>
+
+  <div class="card">
+    <p><strong>Без аккаунта. Без сервера. Без аналитики. Без рекламы.</strong></p>
+    <p class="note">HabitFlow не собирает никаких данных. Привычки и история хранятся в локальной базе на вашем iPhone и никуда не передаются.</p>
+  </div>
+
+  <h3>Что умеет</h3>
+  <ul class="features">
+    <li><strong>Отметки за день</strong><span>Одно касание отмечает привычку выполненной. Повторное касание отменяет отметку.</span></li>
+    <li><strong>Гибкое расписание</strong><span>Выбирайте дни недели, в которые привычка повторяется.</span></li>
+    <li><strong>Серии и история</strong><span>Текущая и лучшая серия, процент выполнения за 30 дней и тепловая карта за последние месяцы.</span></li>
+    <li><strong>Обзор прогресса</strong><span>Итоги за неделю, график за 14 дней и разбивка по каждой привычке.</span></li>
+    <li><strong>Локальные напоминания</strong><span>Необязательное ежедневное напоминание для каждой привычки, которое планирует сама iOS на устройстве.</span></li>
+    <li><strong>Виджет на экране «Домой»</strong><span>Маленький и средний виджеты показывают, что осталось на сегодня.</span></li>
+    <li><strong>Иконки и цвета</strong><span>Двадцать иконок и восемь спокойных цветов, чтобы различать привычки.</span></li>
+    <li><strong>Светлая и тёмная тема</strong><span>Следует системному оформлению, поддерживает Dynamic Type.</span></li>
+  </ul>
+
+  <h3>Требования</h3>
+  <p>iPhone с iOS 18 или новее.</p>
+
+  <div class="links">
+    <a class="btn primary" href="privacy.html#ru">Политика конфиденциальности</a>
+    <a class="btn" href="support.html#ru">Поддержка</a>
+  </div>
+
+  <h3>Контакт</h3>
+  <p>Вопросы, ошибки и идеи: <code>snmqdubjl669@outlook.com</code></p>
+</section>
+
+<footer>
+  HabitFlow · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a>
+</footer>
+
+</div>
+</body>
+</html>

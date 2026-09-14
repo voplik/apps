@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — HabitFlow</title>
+<meta name="description" content="HabitFlow support: how to add a habit, turn on reminders, add the widget, fix notifications that do not arrive, and delete all your data.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --accent: #5F7A5D;
+    --accent-soft: rgba(95, 122, 93, 0.12);
+    --bg: #F6F6F2;
+    --card: #FFFFFF;
+    --text: #1E221F;
+    --muted: #5D645F;
+    --border: #E3E4DE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #8FAE8C;
+      --accent-soft: rgba(143, 174, 140, 0.14);
+      --bg: #131614;
+      --card: #1B1E1C;
+      --text: #E9EBE8;
+      --muted: #A2A9A4;
+      --border: #2A2E2B;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 56px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  a:hover { border-bottom-color: var(--accent); }
+  .crumbs { font-size: 15px; color: var(--muted); margin-bottom: 22px; }
+  h1 { font-size: 29px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.4px; }
+  h2 { font-size: 20px; line-height: 1.3; margin: 32px 0 8px; letter-spacing: -0.2px; }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p { margin: 0 0 14px; }
+  .meta { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .card.accent { border-left: 4px solid var(--accent); }
+  .card p:last-child, .card ul:last-child, .card ol:last-child { margin-bottom: 0; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  .toc { list-style: none; padding: 0; margin: 0 0 8px; }
+  .toc li { margin-bottom: 6px; }
+  .note { color: var(--muted); font-size: 15px; }
+  .lang-switch { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
+  hr.sep { border: 0; border-top: 1px solid var(--border); margin: 46px 0 34px; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--accent-soft);
+    padding: 1px 5px;
+    border-radius: 5px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    h1 { font-size: 25px; }
+    .wrap { padding: 24px 16px 44px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="crumbs"><a href="index.html">HabitFlow</a> · Support</p>
+
+<h1>Support</h1>
+<p class="meta">HabitFlow for iPhone · iOS 18 or later</p>
+
+<p class="lang-switch"><strong>English</strong> · <a href="#ru">Русская версия</a></p>
+
+<section id="en" lang="en">
+
+  <div class="card">
+    <ul class="toc">
+      <li><a href="#add">Add a habit</a></li>
+      <li><a href="#check">Mark a habit done</a></li>
+      <li><a href="#reminders">Turn on reminders</a></li>
+      <li><a href="#widget">Add the widget</a></li>
+      <li><a href="#notif-fix">Reminders are not arriving</a></li>
+      <li><a href="#delete">Delete your data</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <h2 id="add">Add a habit</h2>
+  <ol>
+    <li>Open HabitFlow on the <strong>Today</strong> tab.</li>
+    <li>Tap <strong>+</strong> in the top-right corner. On a fresh install you can also tap one of the suggested starters, which fills the name and icon in for you.</li>
+    <li>Type a name (up to 40 characters). Short and specific works best: "Read 10 pages" beats "Read more".</li>
+    <li>Pick an icon and a color so the habit is easy to spot in the list.</li>
+    <li>Under <strong>Repeat</strong>, choose the weekdays the habit should appear on. Leaving all seven selected means every day.</li>
+    <li>Tap <strong>Save</strong>.</li>
+  </ol>
+  <p class="note">You can track up to 40 habits at a time. To change a habit later, swipe it in the list and tap Edit, or open the habit and use the menu in the top-right corner.</p>
+
+  <h2 id="check">Mark a habit done</h2>
+  <p>On the <strong>Today</strong> tab, tap the circle to the left of a habit. Tapping it again undoes the completion, so a mis-tap costs nothing. Tap the habit's name instead to open its details: current streak, best streak, completion rate for the last 30 days and a heatmap of recent months. The <strong>Progress</strong> tab shows totals for all habits together.</p>
+  <p class="note">Habits scheduled for other weekdays still appear at the bottom of the Today list under "Other days", so you can check one off early if you want.</p>
+
+  <h2 id="reminders">Turn on reminders</h2>
+  <ol>
+    <li>Open the habit for editing (swipe it in the list, then tap <strong>Edit</strong>) or create a new one.</li>
+    <li>Switch on <strong>Daily reminder</strong> and pick a time.</li>
+    <li>Tap <strong>Save</strong>. The first time you do this, iOS asks for permission to send notifications — tap Allow.</li>
+  </ol>
+  <p>The reminder repeats at that time on every weekday the habit is scheduled for. Reminders are local notifications handled by iOS on your iPhone; nothing is sent over the internet. Each habit has its own reminder, so you can give the morning ones one time and the evening ones another.</p>
+
+  <h2 id="widget">Add the widget</h2>
+  <ol>
+    <li>Touch and hold an empty area of your Home Screen until the icons jiggle.</li>
+    <li>Tap <strong>+</strong> (or <strong>Edit</strong> → <strong>Add Widget</strong>) in the top-left corner.</li>
+    <li>Search for <strong>HabitFlow</strong> and select it.</li>
+    <li>Choose <strong>Today's Habits</strong> in the small or medium size and tap <strong>Add Widget</strong>.</li>
+    <li>Drag it where you want it and tap <strong>Done</strong>.</li>
+  </ol>
+  <p>The widget shows how many of today's habits are done and lists what is left. It refreshes after you check something off in the app; iOS decides the exact moment, so give it a few seconds. If the widget looks empty, open the app once — it writes a fresh snapshot every time something changes.</p>
+
+  <h2 id="notif-fix">Reminders are not arriving</h2>
+  <p>Work through this list — one of these is almost always the cause:</p>
+  <ul>
+    <li><strong>Check permission.</strong> Open the <strong>Settings</strong> tab inside HabitFlow. It shows whether notifications are Allowed, Not allowed or Not set, with a button that takes you straight to iOS Settings. In iOS Settings → Notifications → HabitFlow, make sure <em>Allow Notifications</em> is on, along with Lock Screen, Notification Centre and Banners.</li>
+    <li><strong>Re-open the app after changing permission.</strong> Reminders are re-scheduled when the app runs. After allowing notifications in iOS Settings, come back to HabitFlow and edit and save any habit — that rebuilds all pending reminders.</li>
+    <li><strong>Check the habit itself.</strong> The <em>Daily reminder</em> switch has to be on for that specific habit, and the reminder only fires on the weekdays the habit is scheduled for.</li>
+    <li><strong>Check Focus and Do Not Disturb.</strong> An active Focus mode can silence notifications. Add HabitFlow to the allowed apps for that Focus, or turn the Focus off.</li>
+    <li><strong>Check Scheduled Summary.</strong> In iOS Settings → Notifications → Scheduled Summary, HabitFlow may be set to be delivered later in a summary rather than right away. Remove it from the summary for immediate alerts.</li>
+    <li><strong>Check the sound and volume.</strong> The ring/silent switch and the notification volume affect whether you hear the alert; the banner still appears.</li>
+    <li><strong>Low Power Mode</strong> can delay background activity. Notifications themselves should still fire on time, but if things look off, try it with Low Power Mode disabled.</li>
+  </ul>
+  <p class="note">If none of this helps, write to the address below and mention your iPhone model, your iOS version and the app version (Settings tab → the version is shown at the bottom, and also on the About screen).</p>
+
+  <h2 id="delete">Delete your data</h2>
+  <ul>
+    <li><strong>One habit:</strong> swipe it left in the Today list and tap <strong>Delete</strong>, or open the habit and choose Delete from the menu. Its history goes with it.</li>
+    <li><strong>Everything:</strong> open the <strong>Settings</strong> tab and tap <strong>Delete all data</strong>, then confirm. All habits, all history and all pending reminders are removed.</li>
+    <li><strong>The app:</strong> deleting HabitFlow from your iPhone removes its database, the widget's snapshot and its scheduled notifications.</li>
+  </ul>
+  <p>Deletion is permanent. There is no server copy and no undo, because HabitFlow stores everything locally and collects nothing — see the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Bug reports, questions and feature ideas are welcome: <code>snmqdubjl669@outlook.com</code></p>
+  <p class="note">A reply usually takes a few days — HabitFlow is made by one person. Including your iPhone model, iOS version, app version and what you did just before the problem appeared makes a fix much faster.</p>
+
+</section>
+
+<hr class="sep">
+
+<section id="ru" lang="ru">
+  <h2>Русская версия</h2>
+  <p class="lang-switch"><a href="#en">English</a> · <strong>Русский</strong></p>
+  <p class="meta">HabitFlow для iPhone · iOS 18 или новее</p>
+  <p class="note">Названия кнопок в приложении — на английском, поэтому ниже они приводятся так, как вы увидите их на экране.</p>
+
+  <h3 id="ru-add">Как добавить привычку</h3>
+  <ol>
+    <li>Откройте HabitFlow на вкладке <strong>Today</strong> («Сегодня»).</li>
+    <li>Нажмите <strong>+</strong> в правом верхнем углу. На только что установленном приложении можно нажать одну из предложенных заготовок — название и иконка подставятся сами.</li>
+    <li>Введите название (до 40 символов). Лучше работает короткое и конкретное: «Read 10 pages» лучше, чем «Read more».</li>
+    <li>Выберите иконку и цвет, чтобы привычку было легко узнавать в списке.</li>
+    <li>В разделе <strong>Repeat</strong> («Повтор») отметьте дни недели, в которые привычка должна появляться. Все семь дней означают «каждый день».</li>
+    <li>Нажмите <strong>Save</strong> («Сохранить»).</li>
+  </ol>
+  <p class="note">Одновременно можно вести до 40 привычек. Чтобы изменить привычку позже, смахните её в списке и нажмите Edit либо откройте привычку и воспользуйтесь меню в правом верхнем углу.</p>
+
+  <h3 id="ru-check">Как отметить выполнение</h3>
+  <p>На вкладке <strong>Today</strong> нажмите кружок слева от привычки. Повторное нажатие снимает отметку, так что случайное касание ничего не стоит. Нажатие на название открывает экран привычки: текущая серия, лучшая серия, процент выполнения за 30 дней и тепловая карта последних месяцев. Вкладка <strong>Progress</strong> показывает общую картину по всем привычкам.</p>
+  <p class="note">Привычки, запланированные на другие дни недели, всё равно видны внизу списка в разделе «Other days», так что при желании можно отметить их заранее.</p>
+
+  <h3 id="ru-reminders">Как включить напоминания</h3>
+  <ol>
+    <li>Откройте привычку для редактирования (смахните её в списке и нажмите <strong>Edit</strong>) или создайте новую.</li>
+    <li>Включите переключатель <strong>Daily reminder</strong> («Ежедневное напоминание») и выберите время.</li>
+    <li>Нажмите <strong>Save</strong>. В первый раз iOS спросит разрешение на уведомления — нажмите «Разрешить».</li>
+  </ol>
+  <p>Напоминание повторяется в выбранное время в каждый день недели, на который запланирована привычка. Это локальные уведомления, которые обрабатывает iOS на вашем iPhone; ничего не передаётся через интернет. У каждой привычки своё напоминание, поэтому утренним и вечерним можно задать разное время.</p>
+
+  <h3 id="ru-widget">Как добавить виджет</h3>
+  <ol>
+    <li>Нажмите и удерживайте пустое место на экране «Домой», пока иконки не начнут покачиваться.</li>
+    <li>Нажмите <strong>+</strong> (или <strong>Изменить</strong> → <strong>Добавить виджет</strong>) в левом верхнем углу.</li>
+    <li>Найдите <strong>HabitFlow</strong> и выберите его.</li>
+    <li>Выберите виджет <strong>Today's Habits</strong> в маленьком или среднем размере и нажмите <strong>Добавить виджет</strong>.</li>
+    <li>Перетащите его в нужное место и нажмите <strong>Готово</strong>.</li>
+  </ol>
+  <p>Виджет показывает, сколько сегодняшних привычек выполнено, и перечисляет оставшиеся. Он обновляется после того, как вы отметили что-то в приложении; точный момент выбирает iOS, поэтому дайте ему несколько секунд. Если виджет выглядит пустым, откройте приложение один раз — оно записывает свежий снимок при каждом изменении.</p>
+
+  <h3 id="ru-notif-fix">Напоминания не приходят</h3>
+  <p>Пройдите по списку — причина почти всегда одна из этих:</p>
+  <ul>
+    <li><strong>Проверьте разрешение.</strong> Откройте вкладку <strong>Settings</strong> внутри HabitFlow: там показано состояние уведомлений (Allowed / Not allowed / Not set) и есть кнопка перехода в системные настройки. В «Настройки iOS» → «Уведомления» → HabitFlow убедитесь, что «Допуск уведомлений» включён, а вместе с ним экран блокировки, Центр уведомлений и баннеры.</li>
+    <li><strong>Перезайдите в приложение после изменения разрешения.</strong> Напоминания перепланируются, когда приложение работает. Разрешив уведомления в настройках iOS, вернитесь в HabitFlow и отредактируйте и сохраните любую привычку — это пересоберёт все запланированные напоминания.</li>
+    <li><strong>Проверьте саму привычку.</strong> Переключатель Daily reminder должен быть включён именно у неё, и напоминание срабатывает только в те дни недели, на которые привычка запланирована.</li>
+    <li><strong>Проверьте режимы фокусирования и «Не беспокоить».</strong> Активный фокус может заглушать уведомления. Добавьте HabitFlow в разрешённые приложения этого фокуса или выключите фокус.</li>
+    <li><strong>Проверьте «Сводку по расписанию».</strong> В «Настройки iOS» → «Уведомления» → «Сводка по расписанию» HabitFlow может быть настроен на доставку позже, в сводке, а не сразу. Уберите его из сводки, чтобы уведомления приходили мгновенно.</li>
+    <li><strong>Проверьте звук и громкость.</strong> Переключатель «Звонок/бесшумно» и громкость уведомлений влияют на то, услышите ли вы сигнал; баннер при этом всё равно появляется.</li>
+    <li><strong>Режим энергосбережения</strong> может задерживать фоновую активность. Сами уведомления должны приходить вовремя, но если что-то идёт не так, попробуйте выключить его.</li>
+  </ul>
+  <p class="note">Если ничего не помогло, напишите на адрес ниже и укажите модель iPhone, версию iOS и версию приложения (вкладка Settings — версия внизу, а также на экране About).</p>
+
+  <h3 id="ru-delete">Как удалить свои данные</h3>
+  <ul>
+    <li><strong>Одну привычку:</strong> смахните её влево в списке Today и нажмите <strong>Delete</strong> либо откройте привычку и выберите «Delete habit» в меню. История удалится вместе с ней.</li>
+    <li><strong>Все данные:</strong> откройте вкладку <strong>Settings</strong>, нажмите <strong>Delete all data</strong> и подтвердите. Удалятся все привычки, вся история и все запланированные напоминания.</li>
+    <li><strong>Приложение:</strong> удаление HabitFlow с iPhone стирает его базу данных, снимок для виджета и запланированные уведомления.</li>
+  </ul>
+  <p>Удаление необратимо. Копии на сервере нет и отмены нет, потому что HabitFlow хранит всё локально и ничего не собирает — см. <a href="privacy.html#ru">политику конфиденциальности</a>.</p>
+
+  <h3 id="ru-contact">Контакт</h3>
+  <p>Сообщения об ошибках, вопросы и идеи приветствуются: <code>snmqdubjl669@outlook.com</code></p>
+  <p class="note">Ответ обычно занимает несколько дней — приложение делает один человек. Если укажете модель iPhone, версию iOS, версию приложения и что делали прямо перед проблемой, починить получится намного быстрее.</p>
+</section>
+
+<footer>
+  HabitFlow · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a>
+</footer>
+
+</div>
+</body>
+</html>
